@@ -10,7 +10,13 @@
     
     <h1>Home page by route with view</h1>
     @foreach ($product as $pro)
-        <h2>{{$pro}}
+        @if ($pro=='pens')
+                {{'ok find'}}
+            @elseif($pro=='paper')
+                {{'paper'}}
+            @else
+                {{'not find'}}
+        @endif
     @endforeach
 </body>
 </html>
