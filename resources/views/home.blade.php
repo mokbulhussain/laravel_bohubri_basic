@@ -9,5 +9,8 @@
 <body>
     
     <h1>Home page by route with view</h1>
+    @foreach ($product as $pro)
+        <h2>{{$pro}}
+    @endforeach
 </body>
 </html>
